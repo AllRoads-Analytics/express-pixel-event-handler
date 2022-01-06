@@ -64,11 +64,6 @@
               var now = new Date();
               paramDate.setTime(paramDate.getTime() + 5 * 1000 * 60); // add 5 minutes
   
-              console.log({
-                now: now,
-                paramDate: paramDate
-              });
-  
               if (!isNaN(paramDate.getTime()) && now.getTime() < paramDate.getTime()) {
                 uid = parts[0];
               }
