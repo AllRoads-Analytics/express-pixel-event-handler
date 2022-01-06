@@ -1,0 +1,21 @@
+{
+  "name": "event-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/bigquery": "^5.9.1",
+    "@google-cloud/debug-agent": "^5.2.8",
+    "express": "^4.17.1"
+  }
+}
