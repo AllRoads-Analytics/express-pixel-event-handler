@@ -42,8 +42,10 @@ const handleEvent = function (req, res) {
       'bn',
       'md',
       'ua',
+
       'host',
       'path',
+      'sid',
    ])(req.query);
   
    if ( ! hasKeys) {
@@ -77,6 +79,7 @@ const handleEvent = function (req, res) {
 
       'host',
       'path',
+      'sid',
 
       // 'value'
    )(req.query);
