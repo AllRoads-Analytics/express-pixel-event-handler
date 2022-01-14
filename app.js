@@ -88,7 +88,7 @@ const handleEvent = function (req, res) {
 
    obj.host_path = obj.host + obj.path;
 
-   obj.ip = req.header('X-Forwarded-For'); // || req.connection.remoteAddress;
+   // obj.ip = req.header('X-Forwarded-For'); // || req.connection.remoteAddress;
 
    insertRow(obj).then(() => {
       let buffer = Buffer.alloc(35);
