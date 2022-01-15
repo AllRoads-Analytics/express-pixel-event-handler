@@ -98,9 +98,10 @@ const handleEvent = function (req, res) {
    });
 }
 
-app.use(express.static(path.join(__dirname, 'storage'), {
-   maxAge: '1d',
-}));
+// service static content from ./storage
+// app.use(express.static(path.join(__dirname, 'storage'), {
+//    maxAge: '1d',
+// }));
 
 app.get('/event.gif', handleEvent);
 app.post('/event.gif', handleEvent);
